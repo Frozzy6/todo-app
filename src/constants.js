@@ -1,0 +1,5 @@
+export const LOCAL_STORAGE_KEY = 'appState';
+export const ADD_TODO_DIALOG = "ADD_TODO_DIALOG";
+export const EDIT_TODO_DIALOG = "EDIT_TODO_DIALOG";
+export const SORT_BY_ADD_ORDER = "SORT_BY_ADD_ORDER";
+export const SORT_BY_ALPHABET_REVERSED = "SORT_BY_ALPHABET_REVERSED";

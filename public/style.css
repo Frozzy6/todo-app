@@ -1,0 +1,144 @@
+:root {
+  --background-color: #F6F8FC;
+  --color-grey: #999;
+  --color-black: #333;
+  --color-black-hover: #000;
+  --color-blue: #2185d0;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+  color: var(--color-black);
+}
+
+
+#root {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  background: var(--background-color);
+}
+
+/* Modal */
+.modal-close-icon {
+  color: var(--color-black);
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.modal-close-icon:hover {
+  color: var(--color-black-hover);
+}
+
+/* App */
+.ui.segment.app {
+  margin-top: 30px;
+  width: 360px;
+  display: block;
+  align-self: baseline;
+  border: 1px solid white;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 5px 5px 5px 0px rgba(199,199,199,1);
+}
+
+
+/* Menu */
+.ui.menu.app-menu {
+  border: none;
+  box-shadow: none;
+}
+
+.ui.menu.app-menu .app-menu__item {
+  padding: 5px;
+}
+
+.ui.menu.app-menu .item::before {
+  display: none;
+}
+
+.sort-alphabet-icon {
+  font-size: 1.2em !important;
+}
+
+.sort-alphabet-icon:hover {
+  color: var(--color-blue);
+  cursor: pointer;
+}
+
+.sort-alphabet-icon_active {
+  color: var(--color-blue);
+}
+
+/* Todo list */
+.todo-list {
+  justify-content: center;
+}
+
+.todo-list__empty {
+  margin: 20px 0;
+  border: none !important;
+  box-shadow: none !important;
+  text-align: center;
+}
+
+/* Todo item */
+.todo-list .ui.card.todo-list__item {
+  margin: .5em;
+}
+
+.todo-list .ui.card.todo-list__item .content {
+  padding: .8em;
+}
+
+.todo-list .ui.card.todo-list__item:hover {
+  transform: translateY(0);
+}
+
+i.icon.todo__edit-icon {
+  position: absolute;
+  top: 12px;
+  right: 40px;
+  cursor: pointer;
+  transition: color 0.3s;
+  font-size: 1.2em;
+}
+
+.todo__edit-icon:hover {
+  color: var(--color-blue);
+}
+
+i.icon.todo__remove-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+  font-size: 1.2em;
+}
+
+.todo__remove-icon:hover {
+  color: red;
+}
+
+.todo-item__title {
+  font-size: 0.9em;
+  font-weight: normal;
+  cursor: pointer;
+  display: inline-block;
+  min-width: 200px;
+}
+
+.todo-list__item.todo-list__item_completed .todo-item__title {
+  text-decoration: line-through;
+  color: var(--color-grey);
+}
